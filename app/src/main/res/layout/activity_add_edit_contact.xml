@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_background"
+    tools:context=".AddEditContactActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:background="@drawable/reounded_edit_text"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/edtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:background="@drawable/reounded_edit_text"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/edtCorreoElectronico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:background="@drawable/reounded_edit_text"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/edtDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dirección"
+        android:background="@drawable/reounded_edit_text"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <EditText
+            android:id="@+id/edtFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Cumpleaños (dd/mm/aaaa)"
+            android:background="@drawable/reounded_edit_text"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/dark_gray"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/gold_soft"
+            android:text="Cumpleaños"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gold_soft"
+        android:text="Guardar"
+        android:textColor="@color/text_white"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp" />
+
+</LinearLayout >
